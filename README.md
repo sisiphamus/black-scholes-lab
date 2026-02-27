@@ -1,22 +1,13 @@
-# Black-Scholes Lab
+# BLACK-SCHOLES-LAB
 
-An interactive options pricing laboratory built with Next.js.
+There's a single equation behind roughly $600 trillion in outstanding derivatives contracts, and most people who use it daily treat it as a black box. Plug in volatility, get a price, move on.
 
-This project will be a hands-on environment for exploring the Black-Scholes model and its extensions. Instead of plugging numbers into a calculator and getting a price back, the goal is to let you see how each input (volatility, time, strike, rate) warps the pricing surface in real time. Built for learning through experimentation.
+This is not a calculator. It's a laboratory.
 
-## Planned
+Drag volatility and watch how delta surfaces warp. Step through time decay and see theta eat away at an option's value. Explore how the Greeks interact -- how gamma spikes near expiration, how vega behaves differently for in-the-money vs. out-of-the-money strikes. The kind of intuition you can't get from a formula sheet.
 
-- Real-time options pricing with adjustable parameters (S, K, T, r, sigma)
-- Interactive Greeks visualization (Delta, Gamma, Theta, Vega, Rho)
-- 3D pricing surface that responds to parameter changes
-- Implied volatility solver and volatility smile visualization
-- Put-call parity demonstration
-- Comparison between Black-Scholes, Binomial Tree, and Monte Carlo pricing methods
+Currently just the Next.js foundation. The math and visualizations are coming.
 
-## Tech
-
-Next.js 16, React 19, TypeScript, Tailwind CSS 4
-
-## Status
-
-Scaffolded and ready for implementation. Part of a quantitative finance toolkit alongside [monte-carlo](https://github.com/sisiphamus/monte-carlo), [stat-arb](https://github.com/sisiphamus/stat-arb), [plasma](https://github.com/sisiphamus/plasma), and [neutron](https://github.com/sisiphamus/neutron).
+```bash
+npm install && npm run dev
+```
