@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Black-Scholes Lab
 
-## Getting Started
+An interactive options pricing laboratory built with Next.js.
 
-First, run the development server:
+This project will be a hands-on environment for exploring the Black-Scholes model and its extensions. Instead of plugging numbers into a calculator and getting a price back, the goal is to let you see how each input (volatility, time, strike, rate) warps the pricing surface in real time. Built for learning through experimentation.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Planned
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Real-time options pricing with adjustable parameters (S, K, T, r, sigma)
+- Interactive Greeks visualization (Delta, Gamma, Theta, Vega, Rho)
+- 3D pricing surface that responds to parameter changes
+- Implied volatility solver and volatility smile visualization
+- Put-call parity demonstration
+- Comparison between Black-Scholes, Binomial Tree, and Monte Carlo pricing methods
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Next.js 16, React 19, TypeScript, Tailwind CSS 4
 
-## Learn More
+## Status
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Scaffolded and ready for implementation. Part of a quantitative finance toolkit alongside [monte-carlo](https://github.com/sisiphamus/monte-carlo), [stat-arb](https://github.com/sisiphamus/stat-arb), [plasma](https://github.com/sisiphamus/plasma), and [neutron](https://github.com/sisiphamus/neutron).
